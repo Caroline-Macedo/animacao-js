@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #242b2e;
+}
+
+button {
+  font-size: 2.4rem;
+  font-weight: 500;
+  background-color: white;
+  color: #242b2e;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #242b2e;
+  background-color: white;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(20px);
+  transition: all ease-in-out 300ms;
+  opacity: 1;
+}
+ul::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 1rem solid #fff;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  position: absolute;
+  top: -0.9rem;
+  left: 0.8rem;
+}
+ul li:nty-child(1) {
+  padding: 16rem 2.8rem 0.5rem 2rem;
+}
+ul li {
+  padding: 0.5rem 2.8rem 1.6rem 2.2rem;
+  border-radius: 0.4rem;
+}
+ul li:hover {
+  background-color: #bdb8ac;
+}
+
+.hidden {
+  visibility: hidden;
+  transform: translateY(0px);
+  opacity: 0;
+}/*# sourceMappingURL=main.css.map */
